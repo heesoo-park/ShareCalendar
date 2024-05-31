@@ -42,6 +42,8 @@ dependencies:
   hive_flutter: ^1.1.0
   # 설정값 저장을 위한 라이브러리
   shared_preferences: ^2.2.3
+  # 나라별 정보를 얻기 위한 라이브러리
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:

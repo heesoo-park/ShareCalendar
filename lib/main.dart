@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:main/home_page.dart';
+import 'package:intl/date_symbol_data_local.dart';
+import 'package:main/navigation.dart';
 
-void main() {
+void main() async {
+  await initializeDateFormatting();
+
   runApp(const MyApp());
 }
 
@@ -11,12 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Sharad Calendar',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const Navigation(),
     );
   }
 }
