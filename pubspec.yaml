@@ -44,6 +44,14 @@ dependencies:
   shared_preferences: ^2.2.3
   # 나라별 정보를 얻기 위한 라이브러리
   intl: ^0.19.0
+  # supabase_flutter를 위한 라이브러리
+  supabase_flutter: ^2.0.0
+  # 환경변수 설정 env 파일 사용에 편리함을 주는 라이브러리
+  flutter_dotenv: ^5.1.0
+  # 시간 설정을 위한 라이브러리
+  flutter_time_picker_spinner: ^2.0.0
+  # 주소 검색을 위한 라이브러리
+  remedi_kopo: ^0.0.2
 
 dev_dependencies:
   flutter_test:
@@ -71,7 +79,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - .env
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
